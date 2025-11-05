@@ -142,4 +142,41 @@ footer strong {
     color: #ffdf00;
 }
 
+/* ==== TABLAS DE PRODUCTOS ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 1rem;
+    animation: aparecer 1.2s ease-in-out;
+}
+
+thead {
+    background: linear-gradient(90deg, #0078d7, #00b4d8);
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #e6f4ff;
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
+tbody tr td:first-child {
+    font-weight: 600;
+    color: #0078d7;
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
 
