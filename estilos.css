@@ -177,6 +177,53 @@ th {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+ /* ==== GALERÍA DE EMPLEADOS ==== */
+.galeria-empleados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+    animation: aparecer 1.2s ease-in-out;
+}
+
+.empleado {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.empleado:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.empleado img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.empleado img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.empleado h3 {
+    margin: 10px 0 5px;
+    color: #0078d7;
+}
+
+.empleado p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
 
 
 
